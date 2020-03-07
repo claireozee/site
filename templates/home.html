@@ -1,13 +1,26 @@
 <!doctype html>
 <html>
-  <head>
+<head>
     <title>Home</title>
-  </head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/site.css') }}"/>
+</head>
 
-  <body>
-
-  <script>
-  </script>
-
-  </body>
+<body>
+    <div class="navbar">
+        <a href="/" class="active">Home</a>
+        <a href="/experience">Experience</a>
+        <a href="/projects">Projects</a>
+        <a href="/contact">Contact</a>
+    </div>
+    <div class="content">
+        <p>name</p>
+        <ul>
+            <li>maths</li>
+            <li>tech</li>
+            <li>creative (link to 'coming soon' page</li>
+        </ul>
+    </div>
+<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/site.js') }}"></script>
+</body>
 </html>

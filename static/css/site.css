@@ -1,1 +1,109 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway&display=swap);
+body {
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    background-color: rgb(240, 240, 240);
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);   
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 5px;
+    margin-top: 50px;
+    color: rgb(182, 182, 182);  
+}
+
+.navbar a:hover {
+    color: orange;
+}
+
+.navbar a:active {
+    color: blue;
+}
+
+.active {
+    color: rgb(59, 59, 59);
+    border-bottom: 3px solid blue;
+}
+
+
+
+.content {
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*home*/
+
+
+
+
+
+
+/*experience*/
+
+
+
+
+
+
+/*projects*/
+#projects-content {
+    flex-direction: row;
+}
+
+#projects-content h2 {
+    margin: 0;
+    color: blue;
+}
+
+#projects-content h6 {
+    margin-top: 0;
+}
+
+#projects-content h2:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+.projects-details {
+    padding-right: 20px;
+    flex-basis: 30%;
+    border-right: blue solid 1px;
+}
+
+.projects-here {
+    padding-left: 20px; 
+    flex-basis: 70%;
+}
+
+.a-project {
+    height: 25vh;
+    margin-bottom: 5vh;
+}
+
+
+
+
+/*contact*/
+
+
+
+
+
+
+
+
+
+p {
+    color: black;
+}
+
 
