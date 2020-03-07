@@ -7,6 +7,10 @@ app = Flask("PortfolioSite")
 def home():
         return render_template("home.html")
 
+@app.route("/creative")
+def creative():
+        return render_template("creative.html")
+
 @app.route("/experience")
 def experience():
         return render_template("experience.html")

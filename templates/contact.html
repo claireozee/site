@@ -3,8 +3,8 @@
 <head>
     <title>Contact Me</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/site.css') }}"/>
+    <script src="https://use.fontawesome.com/3f0b8bdb2e.js"></script>
 </head>
-
 <body>
     <div class="navbar">
         <a href="/">Home</a>
@@ -13,9 +13,19 @@
         <a href="/contact" class="active">Contact</a>
     </div>
     <div class="content">
-        <p> linkedin, insta, email, github </p>
+        <div class="socials">
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-github"></i>
+            <i class="far fa-envelope"></i>
+            <p>icons all here</p>
+        </div>
     </div>
 <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='js/site.js') }}"></script>
 </body>
 </html>
+
+
+<!-- https://codepen.io/Stockin/pen/mzydLz
+https://freefrontend.com/css-social-media-icons/ -->

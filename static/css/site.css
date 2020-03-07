@@ -5,6 +5,12 @@ body {
     margin: 0;
 }
 
+/* styling all site links here */
+.navbar a, #to-creative {
+    text-decoration: none;
+    color: rgb(182, 182, 182);  
+}
+
 .navbar {
     display: flex;
     justify-content: space-around;
@@ -12,17 +18,15 @@ body {
 }
 
 .navbar a {
-    text-decoration: none;
     padding: 5px;
     margin-top: 50px;
-    color: rgb(182, 182, 182);  
 }
 
-.navbar a:hover {
+.navbar a:hover, #to-creative:hover {
     color: orange;
 }
 
-.navbar a:active {
+.navbar a:active, #to-creative:active {
     color: blue;
 }
 
@@ -31,14 +35,28 @@ body {
     border-bottom: 3px solid blue;
 }
 
-
-
 .content {
+    height: 70vh;
     padding: 60px;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
+    overflow: visible;
 }
+
+
+/*creative & projects*/
+#creative-navbar, #projects-navbar{
+    visibility: hidden;
+}
+
+#creative-home, #backto-projects {
+    visibility: visible;
+}
+
+
+
 
 /*home*/
 
@@ -57,6 +75,7 @@ body {
 /*projects*/
 #projects-content {
     flex-direction: row;
+    height: auto;
 }
 
 #projects-content h2 {
@@ -95,7 +114,13 @@ body {
 /*contact*/
 
 
-
+.socials {
+    background-color: rosybrown;
+    padding: 100px;
+    /*perspective: 500px;
+    transform-style: preserve-3d;
+    transform: rotateX(45deg);*/
+}
 
 
 
