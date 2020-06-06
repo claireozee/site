@@ -6,20 +6,21 @@ body {
 }
 
 /* styling all site links here */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);   
+    box-shadow: black;
+}
+
 .navbar a, #to-creative {
     text-decoration: none;
     color: rgb(182, 182, 182);  
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-around;
-    background-color: rgb(255, 255, 255);   
-}
-
 .navbar a {
     padding: 5px;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .navbar a:hover, #to-creative:hover {
@@ -46,12 +47,12 @@ body {
 }
 
 
-/*creative & projects*/
-#creative-navbar, #projects-navbar{
+/*creative*/
+#creative-navbar {
     visibility: hidden;
 }
 
-#creative-home, #backto-projects {
+#creative-home {
     visibility: visible;
 }
 
@@ -59,7 +60,9 @@ body {
 
 
 /*home*/
-
+.name {
+    
+}
 
 
 
@@ -105,7 +108,7 @@ body {
 
 .a-project {
     height: 25vh;
-    margin-bottom: 5vh;
+    margin: 3vh 0;
 }
 
 
@@ -113,13 +116,34 @@ body {
 
 /*contact*/
 
-
 .socials {
-    background-color: rosybrown;
+    border: solid 2px rosybrown;
     padding: 100px;
     /*perspective: 500px;
     transform-style: preserve-3d;
     transform: rotateX(45deg);*/
+}
+
+/*icons*/
+.fab, .far {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.fa-instagram:hover {
+    color: linear-gradient(to bottom, #6600cc 0%, #ff6600 100%);
+}
+
+.fa-linkedin:hover {
+    color: #0077B5;
+}
+
+.fa-github:hover {
+    color: rgb(36, 41, 46);
+}
+
+.fa-envelope:hover {
+    color: blue;
 }
 
 
