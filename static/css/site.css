@@ -63,6 +63,54 @@ body {
 }
 
 
+.footer {
+    border: red 1px solid;
+    bottom: 0;
+}
+
+.socials {
+    border: solid 2px rosybrown;
+    padding: 100px;
+    /*perspective: 500px;
+    transform-style: preserve-3d;
+    transform: rotateX(45deg);*/
+}
+
+/*icons*/
+.fab, .far {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.fa-instagram:hover {
+    color: linear-gradient(to bottom, #6600cc 0%, #ff6600 100%);
+}
+
+.fa-linkedin:hover {
+    color: #0077B5;
+}
+
+.fa-github:hover {
+    color: rgb(36, 41, 46);
+}
+
+.fa-envelope:hover {
+    color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*home*//*
@@ -121,35 +169,7 @@ body {
 
 /*contact*/
 
-.socials {
-    border: solid 2px rosybrown;
-    padding: 100px;
-    /*perspective: 500px;
-    transform-style: preserve-3d;
-    transform: rotateX(45deg);*/
-}
 
-/*icons*/
-.fab, .far {
-    padding: 10px;
-    cursor: pointer;
-}
-
-.fa-instagram:hover {
-    color: linear-gradient(to bottom, #6600cc 0%, #ff6600 100%);
-}
-
-.fa-linkedin:hover {
-    color: #0077B5;
-}
-
-.fa-github:hover {
-    color: rgb(36, 41, 46);
-}
-
-.fa-envelope:hover {
-    color: blue;
-}
 
 
 
