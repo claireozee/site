@@ -7,12 +7,16 @@ body {
 /* styling all site links here */
 .navbar {
     display: flex;
-    justify-content: center;
-    align-items: baseline;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: center;
     background-color: rgb(255, 255, 255);   
     box-shadow: black;
     height: 10vh;
+    padding: 1vh;
+}
+
+.navname {
+    margin: 1vh;
 }
 
 .navbar a, #to-creative {
@@ -21,7 +25,7 @@ body {
 }
 
 .navbar a {
-    padding: 10px;
+    padding: 1.2vh;
 }
 
 .navbar a:hover, #to-creative:hover {
@@ -38,7 +42,7 @@ body {
 }
 
 .content {
-    height: 70vh;
+    height: 68vh;
     padding: 10vh;
     display: flex;
     justify-content: center;
