@@ -1,28 +1,21 @@
 <!doctype html>
 <html>
 <head>
-    <title>Experience</title>
+    <title>Thoughts</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/site.css') }}"/>
 </head>
 
 <body>
-    <div class="navbar">
+    <div class="navbar" id="projects-navbar">
         <a href="/">Home</a>
-        <a href="/experience" class="active">Experience</a>
+        <a href="/experience">Experience</a>
         <a href="/projects">Projects</a>
         <a href="/thoughts">Thoughts</a>
         <a href="/contact">Contact</a>
     </div>
-    <div class="content">
-        <div class="timeline">
-            <p>tl here</p>
-        </div>
-        <div class="timeline-content">
-            <p>content here</p>
-        </div>
-    </div>
-    <div class="highlights">
-        <p>images - twitter, microsoft, google, silicon valley</p>
+    <div class="content" id="projects-content">
+
+        
     </div>
 <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='js/site.js') }}"></script>
