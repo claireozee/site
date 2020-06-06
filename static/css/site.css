@@ -1,16 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway&display=swap);
 body {
     font-family: Raleway, Arial, Helvetica, sans-serif;
-    background-color: rgb(240, 240, 240);
     margin: 0;
 }
 
 /* styling all site links here */
 .navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: baseline;
+    align-items: flex-end;
     background-color: rgb(255, 255, 255);   
     box-shadow: black;
+    height: 10vh;
 }
 
 .navbar a, #to-creative {
@@ -19,8 +21,7 @@ body {
 }
 
 .navbar a {
-    padding: 5px;
-    margin-top: 40px;
+    padding: 10px;
 }
 
 .navbar a:hover, #to-creative:hover {
@@ -38,12 +39,13 @@ body {
 
 .content {
     height: 70vh;
-    padding: 60px;
+    padding: 10vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     overflow: visible;
+    background-color: rgb(240, 240, 240);
 }
 
 
@@ -59,7 +61,7 @@ body {
 
 
 
-/*home*/
+/*home*//*
 .name {
     
 }
@@ -78,7 +80,6 @@ body {
 /*projects*/
 #projects-content {
     flex-direction: row;
-    height: auto;
 }
 
 #projects-content h2 {
