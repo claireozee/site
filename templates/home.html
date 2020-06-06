@@ -36,9 +36,18 @@
     </div>
 <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='js/site.js') }}"></script>
+<script src="https://kit.fontawesome.com/ace997583a.js"></script>
 <script>
+    $(document).ready(function() {
+        $('.fa-envelope').hover(function(){ 
+            $(this).toggleClass('fa-envelope-open');  
+        });
+    });
+</script>
 
 
 </script>
 </body>
 </html>
+<!-- https://codepen.io/Stockin/pen/mzydLz
+https://freefrontend.com/css-social-media-icons/ -->
