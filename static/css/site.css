@@ -10,9 +10,17 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: rgb(255, 255, 255);   
-    box-shadow: black;
+    box-shadow: 0px 0px 100px 0px rgba(181, 181, 181);
     height: 10vh;
     padding: 1vh;
+    position: relative; /*for box shadow to show*/
+}
+
+.navcontent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 }
 
 .navname {
@@ -78,7 +86,7 @@ body {
 
 /*icons*/
 .fab, .far {
-    padding: 10px;
+    padding: 1vh;
     cursor: pointer;
 }
 

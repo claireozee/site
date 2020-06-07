@@ -22,9 +22,5 @@ def projects():
 @app.route("/thoughts")
 def thoughts():
         return render_template("thoughts.html")
-
-@app.route("/contact")
-def contact():
-        return render_template("contact.html")
-
+ 
 app.run(port=5002)
