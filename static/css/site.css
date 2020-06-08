@@ -163,15 +163,15 @@ body {
     cursor: pointer;
 }
 
-.projects-details {
+.projects-name {
     padding-right: 20px;
-    flex-basis: 30%;
+    flex-basis: 25%;
     border-right: blue solid 1px;
 }
 
-.projects-here {
-    padding-left: 20px; 
-    flex-basis: 70%;
+.projects-info {
+    padding-left: 40px; 
+    flex-basis: 75%;
 }
 
 .a-project {
@@ -179,7 +179,23 @@ body {
     margin: 3vh 0;
 }
 
+.a-project ul {
+    margin-top: 0;
+}
 
+.a-project p {
+    margin-bottom: 0;
+}
+
+.a-project ul > li {
+    list-style: none;
+    text-indent: -15px;
+}
+
+.a-project ul > li:before {
+    content: "- ";
+    text-indent: -5px;
+}
 
 
 /*contact*/
