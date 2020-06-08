@@ -180,11 +180,23 @@ body {
     top: 3vh;
     width: 0;
     z-index: 1;
-    right: 1vw;
+    
     border: medium solid blue;
     border-width: 10px 10px 10px 10px;
     border-color: blue transparent transparent transparent ;
-  }
+}
+
+/*CHANGE ALL OF THESE*/
+.c1::before {
+    right: 9vw;
+}
+.c2::before {
+    right: 34vw;
+}
+.c3::before {
+    right: 57vw;
+}
+
   
  .container {
     border: pink solid 5px;
