@@ -149,6 +149,8 @@ body {
     width: 100%;
     height: 30%;
     position: relative;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .timeline-content {
@@ -179,12 +181,24 @@ body {
     width: 0;
     z-index: 1;
     right: 1vw;
-    border: medium solid rgb(255, 4, 4);
+    border: medium solid blue;
     border-width: 10px 10px 10px 10px;
-    border-color: rgb(255, 0, 0) transparent transparent transparent ;
+    border-color: blue transparent transparent transparent ;
   }
   
- 
+ .container {
+    border: pink solid 5px;
+    margin: 4vh 0 0 2vh;
+ }
+
+ .container h3 {
+    margin: 1vh;
+ }
+
+ .container h6 {
+    margin: 0 1vh;
+    text-align: center;
+ }
 
 
 
