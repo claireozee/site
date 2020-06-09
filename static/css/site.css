@@ -143,7 +143,6 @@ body {
 }*/
 
 .timeline {
-    border: yellow 3px solid;
     overflow-x: scroll;
     padding: 1vh;
     width: 100%;
@@ -151,6 +150,7 @@ body {
     position: relative;
     display: flex;
     flex-direction: row-reverse;
+    border: red 2px solid;
 }
 
 .timeline-content {
@@ -176,13 +176,11 @@ body {
 .container::before {
     content: " ";
     height: 0;
-    position: absolute;
     top: 3vh;
     width: 0;
     z-index: 1;
-    
     border: medium solid blue;
-    border-width: 10px 10px 10px 10px;
+    border-width: 10px 10px 0px 10px;
     border-color: blue transparent transparent transparent ;
 }
 
@@ -200,11 +198,16 @@ body {
   
  .container {
     border: pink solid 5px;
-    margin: 4vh 0 0 2vh;
+    margin: 2.5vh 0 0 4vh;
  }
 
- .container h3 {
+ .container h3, .container h6 {
     margin: 1vh;
+    color: rgb(182, 182, 182);
+ }
+
+ .container h3:hover {
+    color: blue;
  }
 
  .container h6 {
