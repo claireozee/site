@@ -50,12 +50,16 @@ body {
 }
 
 .content {
-    height: 68vh;
-    padding: 10vh;
+    height: 62.2vh;
+    padding: 9vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+
+#home-content, #thoughts-content {
+
 }
 
 
@@ -89,6 +93,7 @@ body {
 /*icons*/
 .fab, .far {
     padding: 1vh;
+    padding-bottom: 0;
     cursor: pointer;
 }
 
