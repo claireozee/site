@@ -20,21 +20,31 @@
     <div class="content" id="experience-content">
         <div class="timeline">
             <div class="container c3">
-                <h3>#100DaysOfCode</h3>
+                <h3 class="100daysofcode-name">#100DaysOfCode</h3>
                 <h6>Nov 2019</h6>
             </div>
             <div class="container c2">
-                <h3>Hack Girl Summer</h3>
+                <h3 class="hackgirlsummer-name">Hack Girl Summer</h3>
                 <h6>Jun 2020</h6>
             </div>
             <div class="container c1">
-                <h3>Silicon Valley</h3>
+                <h3 class="siliconvalley-name">Silicon Valley</h3>
                 <h6>Sep 2020</h6>
             </div>
         </div>
         <div class="timeline-content">
-            <p>Silicon Valley</p>
-            <p>#100DaysOfCode + images - twitter, microsoft, google, silicon valley</p>
+            <div class="tl-content 100daysofcode">
+                <h2>#100DaysOfCode</h2>
+                <p>images - twitter, microsoft, google</p>
+            </div>
+            <div class="tl-content hackgirlsummer">
+                <h3>Hack Girl Summer Hackathon</h3>
+                <p>first hackathon</p>
+            </div>
+            <div class="tl-content siliconvalley">
+                <h3>Silicon Valley</h3>
+                <p>san fran babyyy</p>
+            </div>
         </div>
     </div>
     <div class="footer">
@@ -52,5 +62,26 @@
 <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='js/site.js') }}"></script>
 <script src="https://kit.fontawesome.com/ace997583a.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.tl-content').hide();  
+        $('.100daysofcode-name').click(function() {
+            $('.100daysofcode').show();
+            $('.hackgirlsummer').hide();
+            $('.siliconvalley').hide();
+        });
+        $('.hackgirlsummer-name').click(function() {
+            $('.100daysofcode').hide();
+            $('.hackgirlsummer').show();
+            $('.siliconvalley').hide();
+        });
+        $('.siliconvalley-name').click(function() {
+            $('.100daysofcode').hide();
+            $('.hackgirlsummer').hide();
+            $('.siliconvalley').show();
+        });
+    });
+    
+</script>
 </body>
 </html>

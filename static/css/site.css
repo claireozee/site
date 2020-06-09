@@ -59,7 +59,7 @@ body {
 }
 
 #home-content, #thoughts-content {
-
+    /*change height of content when clicked*/
 }
 
 
@@ -151,14 +151,13 @@ body {
     overflow-x: scroll;
     padding: 1vh;
     width: 100%;
-    height: 30%;
+    height: 20%;
     position: relative;
     display: flex;
     flex-direction: row-reverse;
 }
 
 .timeline-content {
-    margin-top: 3vh;
     padding: 1vh;
     width: 80%;
     height: 70%;
@@ -189,27 +188,31 @@ body {
 
 
   
- .container {
+.container {
     margin: 2vh 0 0 5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
- }
+}
 
- .container h3, .container h6 {
+.container h3, .container h6 {
     margin: 1vh;
     color: rgb(182, 182, 182);
- }
+}
 
- .container h3:hover {
+.container h3:hover {
     color: blue;
     cursor: pointer;
- }
+}
 
- .container h6 {
+.container h6 {
     margin: 0 1vh;
     text-align: center;
- }
+}
+
+.tl-content {
+    border: red 1px solid;
+}
 
 
 
