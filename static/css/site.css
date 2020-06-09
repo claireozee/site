@@ -4,7 +4,6 @@ body {
     margin: 0;
 }
 
-/* styling all site links here */
 .navbar {
     display: flex;
     flex-direction: column;
@@ -57,20 +56,6 @@ body {
     flex-direction: column;
     align-items: center;
 }
-#projects-content{
-    height: auto;
-}
-
-
-/*creative*/
-#creative-navbar {
-    visibility: hidden;
-}
-
-#creative-home {
-    visibility: visible;
-}
-
 
 .footer {
     display: flex;
@@ -116,36 +101,31 @@ body {
     margin: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+p {
+    color: black;
+}
 
 /*home*//*
 .name {
     
 }
 
+/*creative*/
+#creative-navbar {
+    visibility: hidden;
+}
 
+#creative-home {
+    visibility: visible;
+}
+
+#projects-content{
+    height: auto;
+}
 
 
 
 /*experience*/
-/*#experience-content {
-    justify-content: start;
-    padding: 10vh;
-}*/
-
 .timeline {
     overflow-x: scroll;
     padding: 1vh;
@@ -161,7 +141,11 @@ body {
     width: 80%;
     height: 70%;
 }
-  
+
+.tl-content {
+    border: red 1px solid;
+}
+
 /* The actual timeline (the horizontal ruler) */
 .timeline::after {
     content: '';
@@ -207,10 +191,6 @@ body {
     text-align: center;
 }
 
-.tl-content {
-    border: red 1px solid;
-}
-
 img {
     height: 30vh;
     width: 20vh;
@@ -219,11 +199,6 @@ img {
 .horizontal-img {
 
 }
-
-
-
-
-
 
 
 
@@ -261,9 +236,6 @@ img {
 .a-project {
     height: 23.6vh;
     margin: 3vh 0 6vh 0;
-   /* display: flex;
-    flex-direction: column;
-    justify-content: center;*/
 }
 
 .a-project ul {
@@ -284,18 +256,12 @@ img {
     text-indent: -5px;
 }
 
-
-/*contact*/
-
-
-
-
-
-
-
-
-p {
-    color: black;
+/*thoughts*/
+#thoughts-content {
+    flex-direction: column;
 }
 
-
+.thoughtsrow {
+    display: flex;
+    flex-direction: row;
+}
