@@ -35,15 +35,33 @@
         <div class="timeline-content">
             <div class="tl-content 100daysofcode">
                 <h2>#100DaysOfCode</h2>
-                <p>images - twitter, microsoft, google</p>
+                <p></p>
+                <img src="/static/images/google.jpeg"><br/>
+                <img src="/static/images/twitter.jpeg" class="horizontal-img"><br/>
+                <img src="/static/images/microsoft.jpeg">
             </div>
             <div class="tl-content hackgirlsummer">
                 <h2>Hack Girl Summer Hackathon</h2>
-                <p>Student hackathon</p>
+                <p>Student hackathon</p><br/>
+                <p>Student hackathon</p><br/>
+                <p>Student hackathon</p><br/>
+                <p>Student hackathon</p><br/>
+                <p>Student hackathon</p><br/>
+                <p>Student hackathon</p><br/>
+                <p>Student hackathon</p><br/>
+                <p>Student hackathon</p><br/>
+                <p>Student hackathon</p><br/>
             </div>
             <div class="tl-content siliconvalley">
                 <h2>Silicon Valley</h2>
-                <p>san fran babyyy</p>
+                <p>san fran babyyy</p><br/>
+                <p>san fran babyyy</p><br/>
+                <p>san fran babyyy</p><br/>
+                <p>san fran babyyy</p><br/>
+                <p>san fran babyyy</p><br/>
+                <p>san fran babyyy</p><br/>
+                <p>san fran babyyy</p><br/>
+                <p>san fran babyyy</p><br/>
             </div>
         </div>
     </div>
@@ -69,16 +87,19 @@
             $('.100daysofcode').show();
             $('.hackgirlsummer').hide();
             $('.siliconvalley').hide();
+            $('#experience-content').css("height", "auto");
         });
         $('.hackgirlsummer-name').click(function() {
             $('.100daysofcode').hide();
             $('.hackgirlsummer').show();
             $('.siliconvalley').hide();
+            $('#experience-content').css("height", "auto");
         });
         $('.siliconvalley-name').click(function() {
             $('.100daysofcode').hide();
             $('.hackgirlsummer').hide();
             $('.siliconvalley').show();
+            $('#experience-content').css("height", "auto");
         });
 
     });
