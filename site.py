@@ -19,8 +19,8 @@ def experience():
 def projects():
         return render_template("projects.html")
 
-@app.route("/thoughts")
-def thoughts():
-        return render_template("thoughts.html")
+@app.route("/blog")
+def blog():
+        return render_template("blog.html")
  
 app.run(port=5002)
