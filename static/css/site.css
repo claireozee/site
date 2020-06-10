@@ -283,5 +283,10 @@ img {
 }
 
 .col:hover {
+    cursor: pointer;
+}
 
+.back-button:hover {
+    cursor: pointer;
+    color: blue;
 }

@@ -18,22 +18,38 @@
         </div>
     </div>
     <div class="content" id="thoughts-content">
-        <div class="thoughtsrow 1"> <!--bottom row-->
-            <div class="col 1">
-                <p>1. "opinion about the Cyber teammate article"</p>
+        <div class="thoughts-individual">
+            <div class="thoughtsrow 1"> <!--bottom row-->
+                <div class="col 1 first-post">
+                    <p>1. "opinion about the Cyber teammate article"</p>
+                </div>
+                <div class="col 2 second-post">
+                    <p>2. "Opinion on The Fourth Industrial Revolution & The Technological Singularity"</p>
+                </div>
             </div>
-            <div class="col 2">
-                <p>2. "Opinion on The Fourth Industrial Revolution & The Technological Singularity"</p>
+            <div class="thoughtsrow 2" style="display:none;"> <!--top row-->
+                <div class="col 1 third-post">
+                    <p>3. Maths?</p>
+                </div>
+                <div class="col 2 fourth-post">
+                    <p>4. Post here...</p>
+                </div>
             </div>
         </div>
-        <div class="thoughtsrow 2" style="display:none;"> <!--top row-->
-            <div class="col 1">
-                <p>3. Maths</p>
-            </div>
-            <div class="col 2">
-                <p>4. (posts)</p>
-            </div>
+        <div class="blog-posts first-post-content">
+            <p>1. Cyber teammate article text Cyber teammate article text Cyber teammate article text Cyber teammate article text Cyber teammate article text Cyber teammate article text Cyber teammate article text Cyber teammate article text Cyber teammate article text Cyber teammate article text Cyber teammate article text Cyber teammate article text Cyber teammate article text Cyber teammate article text Cyber teammate article text Cyber teammate article text Cyber teammate article text Cyber teammate article text Cyber teammate article text Cyber teammate article text Cyber teammate article text </p>
         </div>
+        <div class="blog-posts second-post-content">
+            <p>2. Fourth Industrial Revolution & The Technological Singularity text Fourth Industrial Revolution & The Technological Singularity text Fourth Industrial Revolution & The Technological Singularity text  Fourth Industrial Revolution & The Technological Singularity text  Fourth Industrial Revolution & The Technological Singularity text  Fourth Industrial Revolution & The Technological Singularity text  Fourth Industrial Revolution & The Technological Singularity text  Fourth Industrial Revolution & The Technological Singularity text  Fourth Industrial Revolution & The Technological Singularity text  Fourth Industrial Revolution & The Technological Singularity text  Fourth Industrial Revolution & The Technological Singularity text  Fourth Industrial Revolution & The Technological Singularity text  Fourth Industrial Revolution & The Technological Singularity text  
+        </div>
+        <div class="blog-posts third-post-content" style="display:none;">
+                
+        </div>
+        <div class="blog-posts fourth-post-content" style="display:none;">
+                
+        </div>
+        <a class="back-button">BACK</a>
+    </div>
     </div>
     <div class="footer">
         <div class="footercontent">
@@ -50,5 +66,42 @@
 <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='js/site.js') }}"></script>
 <script src="https://kit.fontawesome.com/ace997583a.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.first-post-content').hide();  
+        $('.second-post-content').hide();  
+        $('.third-post-content').hide();  
+        $('.fourth-post-content').hide(); 
+        $('.back-button').hide(); 
+        $('.first-post').click(function() {
+            $('.thoughts-individual').hide();
+            $('.first-post-content').show();
+            $('.back-button').show();  
+        });
+        $('.second-post').click(function() {
+            $('.thoughts-individual').hide();
+            $('.second-post-content').show();
+            $('.back-button').show();   
+        });
+        $('.third-post').click(function() {
+            $('.thoughts-individual').hide();
+            $('.third-post-content').show(); 
+            $('.back-button').show();  
+        });
+        $('.fourth-post').click(function() {
+            $('.thoughts-individual').hide();
+            $('.fourth-post-content').show();
+            $('.back-button').show();   
+        });
+        $('.back-button').click(function() {
+            $('.back-button').hide(); 
+            $('.first-post-content').hide();  
+            $('.second-post-content').hide();  
+            $('.third-post-content').hide();  
+            $('.fourth-post-content').hide(); 
+            $('.thoughts-individual').show();
+        }); 
+    }); 
+</script>
 </body>
 </html>
