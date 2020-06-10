@@ -286,6 +286,12 @@ img {
     cursor: pointer;
 }
 
+.back-button {
+    position: fixed;
+    top: 15vh;
+    left: 3vh;
+}
+
 .back-button:hover {
     cursor: pointer;
     color: blue;
