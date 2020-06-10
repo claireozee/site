@@ -22,26 +22,40 @@ body {
     align-items: center;
 }
 
-.navname {
-    margin: 1vh;
-}
-
-.navbar a, #to-creative {
+.navlinks a, #to-creative {
     text-decoration: none;
     color: rgb(182, 182, 182);  
 }
 
-.navbar a {
+.navlinks a {
     padding: 1.2vh;
 }
 
-.navbar a:hover, #to-creative:hover {
+.navlinks a:hover, #to-creative:hover {
     color: orange;
 }
 
-.navbar a:active, #to-creative:active {
+.navlinks a:active, #to-creative:active {
     color: blue;
 }
+
+.navname {
+    margin: 1vh;
+}
+
+.backhome {
+    color: black;
+    text-decoration: none;
+}
+
+.backhome:hover {
+    color: rgba(80, 80, 80);
+}
+
+
+
+
+
 
 .active {
     color: rgb(59, 59, 59);
