@@ -6,7 +6,7 @@
 </head>
 
 <body>
-    <div class="navbar">
+    <div class="navbar homenav">
         <div class="navcontent">
             <h1 class="navname"><a href="/" class="backhome">Claire Ozee</a></h1>
             <div class="navlinks">
@@ -17,11 +17,26 @@
         </div>
     </div>
     <div class="content" id="home-content">
-        <h1 class="name">Claire Ozee</h1>
-        <p>Mathematics student</p>
-        <p>Exploring opportunities within the tech industry</p>
-        <p>With a creative interest <a href="/creative" id="to-creative">here</a></p>
-        <p>maths / coding faded into background somehow..</p>
+        <div class="landing name">
+            <h1>Claire Ozee</h1>
+            <button class="to-about">About</button>
+
+        </div>
+        <div class="landing about">
+            <div class="about-top-col">
+                <div class="about-left">
+                    <p>pic here?</p>
+                </div>
+                <div class="about-right">
+                    <p>Mathematics student</p>
+                    <p>Exploring opportunities within the tech industry</p>
+                    <p>With a creative interest <a href="/creative" id="to-creative">here</a></p>
+                    <p>maths / coding faded into background somehow..</p>
+                </div>
+            </div>
+            <button class="to-site">Enter</button>
+        </div>
+        
     </div>
     <div class="footer">
          <div class="footercontent">
@@ -41,6 +56,18 @@
 <script>
     $(document).ready(function() {
         $('.backhome').css("visibility", "hidden");
+        $('.homenav').css("visibility", "hidden");
+        $('.name').hide();
+        $('.about').hide();
+        $('.name').delay(3000).show();
+        $('.to-about').click(function() {
+            $('.name').hide();
+            $('.about').show();
+        });
+        $('.to-site').click(function() {
+            $('.about').hide();
+            $('.homenav').css("visibility", "visible");
+        });
     });
 </script>
 </body>
@@ -49,4 +76,5 @@
 https://freefrontend.com/css-social-media-icons/ 
 https://toyfight.co/work/open-continents/
 https://hsbello.com/twitter-redesign
-https://tobiasahlin.com/moving-letters/-->
+https://tobiasahlin.com/moving-letters/
+https://css-irl.info/variable-font-animation-with-css-and-splitting-js/-->

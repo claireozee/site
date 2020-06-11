@@ -133,9 +133,6 @@ p {
     align-items: center;
     justify-content: center;
 }
-.name {
-    border: 1px solid rgb(255, 0, 255);
-}
 
 .name h1 {
     font-size: 12vw;
