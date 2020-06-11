@@ -29,6 +29,7 @@ body {
 
 .navlinks a {
     padding: 1.2vh;
+    margin: 0 1vh;
 }
 
 .navlinks a:hover, #to-creative:hover {
@@ -144,10 +145,11 @@ p {
     overflow-x: scroll;
     padding: 1vh;
     width: 100%;
-    height: 20%;
+    height: 20vh;
     position: relative;
     display: flex;
     flex-direction: row-reverse;
+    top: 0;
 }
 
 .timeline-content {
