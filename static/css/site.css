@@ -15,6 +15,10 @@ body {
     position: relative; /*for box shadow to show*/
 }
 
+.homenav {  
+    box-shadow: none;
+}
+
 .navcontent {
     display: flex;
     flex-wrap: wrap;
@@ -120,12 +124,59 @@ p {
     color: black;
 }
 
-/*home*//*
+/*home*/
+.landing {
+    padding: 1vh;
+    margin: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .name {
-    
+    border: 1px solid rgb(255, 0, 255);
 }
 
-/*creative*/
+.name h1 {
+    font-size: 12vw;
+    margin-top: 0;
+}
+
+.about {
+    border: 1px solid rgb(0, 255, 0);
+}
+
+.about-top-col {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-left {
+    margin-right: 5vh;
+}
+
+.about-left, .about-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#home-content button {
+    padding: 1vh;
+    background-color: white;
+    border: 2px solid rgba(183, 183, 183);
+    color: rgba(183, 183, 183);
+}
+
+#home-content button:hover {
+    color: blue;
+    border: 2px solid blue;
+}
+
+
+
+
+/*creative here?*/
 #creative-navbar {
     visibility: hidden;
 }
