@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/site.css') }}"/>
 </head>
 
-<body>
+<body class="landingbody">
     <div class="navbar homenav">
         <div class="navcontent">
             <h1 class="navname"><a href="/" class="backhome">Claire Ozee</a></h1>
@@ -20,7 +20,6 @@
         <div class="landing name">
             <h1>Claire Ozee</h1>
             <button class="to-about">About</button>
-
         </div>
         <div class="landing about">
             <div class="about-top-col">
@@ -36,9 +35,8 @@
             </div>
             <button class="to-site">Enter</button>
         </div>
-        
     </div>
-    <div class="footer">
+    <div class="footer" class="fadeup">
          <div class="footercontent">
             <i class="fab fa-instagram fa-2x"><a href="https://instagram.com/ozee.jpg/"></a></i>
     
@@ -53,13 +51,20 @@
 <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='js/site.js') }}"></script>
 <script src="https://kit.fontawesome.com/ace997583a.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script>
     $(document).ready(function() {
         $('.backhome').css("visibility", "hidden");
         $('.homenav').css("visibility", "hidden");
         $('.name').hide();
         $('.about').hide();
-        $('.name').delay(3000).show();
+        $('.footer').slideDown();
+      //  $('.footercontent').hide();
+       // $('#copyright').hide();
+
+        $('.name').delay(1000).fadeIn(300);
+      //  $('.footer').delay(1000).slideUp();
+
         $('.to-about').click(function() {
             $('.name').hide();
             $('.about').show();

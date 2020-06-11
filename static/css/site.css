@@ -4,6 +4,106 @@ body {
     margin: 0;
 }
 
+/*landing*/
+.homebody {
+    box-shadow: 0px 0px 100px 0px rgba(183, 183, 183);
+}
+
+.landing {
+    padding: 1vh;
+    margin: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.name h1 {
+    font-size: 12vw;
+    margin-top: 0;
+}
+
+.about {
+    border: 1px solid rgb(0, 255, 0);
+}
+
+.about-top-col {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-left {
+    margin-right: 5vh;
+}
+
+.about-left, .about-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#home-content button {
+    padding: 1vh;
+    background-color: white;
+    border: 2px solid rgba(183, 183, 183);
+    color: rgba(183, 183, 183);
+}
+
+#home-content button:hover {
+    color: blue;
+    border: 2px solid blue;
+}
+
+/*footer*/
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255); 
+    box-shadow: 0px 0px 100px 0px rgba(183, 183, 183);
+    position: relative; /* bottom of styling for everything to show - why?*/
+}
+
+.socials {
+    border: solid 2px rosybrown;
+    padding: 100px;
+    /*perspective: 500px;
+    transform-style: preserve-3d;
+    transform: rotateX(45deg);*/
+}
+
+/*icons*/
+.fab, .far {
+    padding: 1vh;
+    padding-bottom: 0;
+    cursor: pointer;
+}
+
+.fa-instagram:hover {
+    color: linear-gradient(to bottom, #6600cc 0%, #ff6600 100%);
+}
+
+.fa-linkedin:hover {
+    color: #0077B5;
+}
+
+.fa-github:hover {
+    color: rgb(36, 41, 46);
+}
+
+.fa-envelope:hover {
+    color: blue;
+}
+
+#copyright {
+    margin: 0;
+}
+
+p {
+    color: black;
+}
+
+/*nav*/
 .navbar {
     display: flex;
     flex-direction: column;
@@ -57,11 +157,6 @@ body {
     color: rgba(80, 80, 80);
 }
 
-
-
-
-
-
 .active {
     color: rgb(59, 59, 59);
     border-bottom: 3px solid blue;
@@ -75,118 +170,6 @@ body {
     flex-direction: column;
     align-items: center;
 }
-
-.footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(255, 255, 255); 
-    box-shadow: 0px 0px 100px 0px rgba(183, 183, 183);
-    position: relative; /* bottom of styling for everything to show - why?*/
-}
-
-.socials {
-    border: solid 2px rosybrown;
-    padding: 100px;
-    /*perspective: 500px;
-    transform-style: preserve-3d;
-    transform: rotateX(45deg);*/
-}
-
-/*icons*/
-.fab, .far {
-    padding: 1vh;
-    padding-bottom: 0;
-    cursor: pointer;
-}
-
-.fa-instagram:hover {
-    color: linear-gradient(to bottom, #6600cc 0%, #ff6600 100%);
-}
-
-.fa-linkedin:hover {
-    color: #0077B5;
-}
-
-.fa-github:hover {
-    color: rgb(36, 41, 46);
-}
-
-.fa-envelope:hover {
-    color: blue;
-}
-
-#copyright {
-    margin: 0;
-}
-
-p {
-    color: black;
-}
-
-/*home*/
-.landing {
-    padding: 1vh;
-    margin: 3vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.name h1 {
-    font-size: 12vw;
-    margin-top: 0;
-}
-
-.about {
-    border: 1px solid rgb(0, 255, 0);
-}
-
-.about-top-col {
-    display: flex;
-    flex-direction: row;
-}
-
-.about-left {
-    margin-right: 5vh;
-}
-
-.about-left, .about-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#home-content button {
-    padding: 1vh;
-    background-color: white;
-    border: 2px solid rgba(183, 183, 183);
-    color: rgba(183, 183, 183);
-}
-
-#home-content button:hover {
-    color: blue;
-    border: 2px solid blue;
-}
-
-
-
-
-/*creative here?*/
-#creative-navbar {
-    visibility: hidden;
-}
-
-#creative-home {
-    visibility: visible;
-}
-
-#projects-content{
-    height: auto;
-}
-
-
 
 /*experience*/
 .timeline {
@@ -266,8 +249,6 @@ img {
 }
 
 
-
-
 /*projects*/
 #projects-content {
     flex-direction: row;
@@ -326,7 +307,7 @@ img {
     text-indent: -5px;
 }
 
-/*thoughts*/
+/*blog*/
 #thoughts-content {
     flex-direction: column-reverse;
 }
@@ -360,4 +341,17 @@ img {
 .back-button:hover {
     cursor: pointer;
     color: blue;
+}
+
+/*creative*/
+#creative-navbar {
+    visibility: hidden;
+}
+
+#creative-home {
+    visibility: visible;
+}
+
+#projects-content{
+    height: auto;
 }
