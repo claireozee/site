@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/site.css') }}"/>
 </head>
 
-<body class="landingbody">
+<body class="homebody">
     <div class="navbar homenav">
         <div class="navcontent">
             <h1 class="navname"><a href="/" class="backhome">Claire Ozee</a></h1>
@@ -56,14 +56,16 @@
     $(document).ready(function() {
         $('.backhome').css("visibility", "hidden");
         $('.homenav').css("visibility", "hidden");
+        $('.footer').css("visibility", "hidden");
         $('.name').hide();
         $('.about').hide();
-        $('.footer').slideDown();
+        
       //  $('.footercontent').hide();
        // $('#copyright').hide();
 
         $('.name').delay(1000).fadeIn(300);
-      //  $('.footer').delay(1000).slideUp();
+        $('.footer').delay(1000).slideDown();
+        $('.footer').delay(2000).css("visibility", "visible");
 
         $('.to-about').click(function() {
             $('.name').hide();

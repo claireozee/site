@@ -4,9 +4,9 @@ body {
     margin: 0;
 }
 
-/*landing*/
+/*home*/
 .homebody {
-    box-shadow: 0px 0px 100px 0px rgba(183, 183, 183);
+    box-shadow: inset 0px -10px 10px -10px rgba(183, 183, 183);
 }
 
 .landing {
