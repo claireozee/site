@@ -250,19 +250,35 @@ img {
     width: 20vh;
 }*/
 
+.daysofcode img {
+    margin: 1vh;
+}
+
+.daysofcode p {
+    margin: 0;
+}
+
+.daysofcode a {
+    text-decoration: none;
+    color: rgb(182, 182, 182);  
+}
+
+.daysofcode a:hover {
+    color: orange;
+}
+
 .twitter-img {
     height: 40vh;
     width: 60vh;
+    float: right;
+    margin-right: 0;
 }
 
 .google-img, .microsoft-img {
     height: 60vh;
-    width: 50vh;
+    width: 45vh;
 }
 
-.daysofcode p {
-    float: left;
-}
 
 
 

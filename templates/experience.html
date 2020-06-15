@@ -19,14 +19,14 @@
     <div class="content" id="experience-content">
         <div class="timeline">
             <div class="container c3">
-                <h3 class="100daysofcode-name">#100DaysOfCode</h3>
+                <h3 class="daysofcode-name">#100DaysOfCode</h3>
                 <h6>Nov 2019</h6>
             </div>
             <div class="container c2">
                 <h3 class="hackgirlsummer-name">Hack Girl Summer</h3>
                 <h6>Jun 2020</h6>
             </div>
-            <div class="container c1">
+            <div class="container c1" style="display: none">
                 <h3 class="siliconvalley-name">Silicon Valley</h3>
                 <h6>Sep 2020</h6>
             </div>
@@ -34,12 +34,13 @@
         <div class="timeline-content">
             <div class="tl-content daysofcode">
                 <h2>#100DaysOfCode</h2>
-                <p><a href='https://www.codefirstgirls.org.uk/learners/'>CodeFirst: Girls'</a> web development courses was where I had my first introduction itnto the tech industry. 
+                <img src="/static/images/twitter.jpeg" class="twitter-img"><br/>
+                <p><a href='https://www.codefirstgirls.org.uk/learners/'>CodeFirst: Girls</a>' web development courses was where I had my first introduction itnto the tech industry. 
                     100daysofcode
-                - cfg = intro into industry
-                - cfg annual conference - eyes opened
-                - started 100 days of code 
-                - Personal goals: 1..., 2..., 3... .
+                - cfg = intro into industry<br/>
+                - cfg annual conference - eyes opened<br/>
+                - started 100 days of code <br/>
+                - Personal goals: 1..., 2..., 3... .<br/>
                     What I did to achieve the goals
                     went to tech events, networked within the community, build my skills
                     html, css, python, js, daily coding challenges
@@ -49,7 +50,7 @@
                 
                 Highlight
                 </p>
-                <img src="/static/images/twitter.jpeg" class="twitter-img"><br/>
+                
                 <img src="/static/images/google.jpeg" class="google-img"><br/>
                 <img src="/static/images/microsoft.jpeg" class="microsoft-img">
             </div>
@@ -96,22 +97,22 @@
 <script>
     $(document).ready(function() {
         $('.tl-content').hide();  
-        $('.100daysofcode-name').click(function() {
-            $('.100daysofcode').show(400);
+        $('.daysofcode-name').click(function() {
+            $('.daysofcode').show(400);
             $('.hackgirlsummer').hide(400);
             $('.siliconvalley').hide(400);
             $('.timeline-content').css("height", "180vh");
             $('#experience-content').css("height", "200vh");
         });
         $('.hackgirlsummer-name').click(function() {
-            $('.100daysofcode').hide(400);
+            $('.daysofcode').hide(400);
             $('.hackgirlsummer').show(400);
             $('.siliconvalley').hide(400);
             $('.timeline-content').css("height", "200vh");
             $('#experience-content').css("height", "220vh");
         });
         $('.siliconvalley-name').click(function() {
-            $('.100daysofcode').hide(400);
+            $('.daysofcode').hide(400);
             $('.hackgirlsummer').hide(400);
             $('.siliconvalley').show(400);
             $('.timeline-content').css("height", "180vh");
