@@ -186,6 +186,7 @@ p {
     position: relative;
     display: flex;
     flex-direction: row-reverse;
+    justify-content: center;
     top: 0;
 }
 
@@ -204,10 +205,9 @@ p {
     content: '';
     position: absolute;
     height: 0.5vh;
-    width: 80%;
+    width: 60%;
     background-color: blue;
     top: 2.5vh;
-    right: 0;
 }
 
 /* Arrows on the timeline */
@@ -254,6 +254,20 @@ img {
     height: 40vh;
     width: 60vh;
 }
+
+.google-img, .microsoft-img {
+    height: 60vh;
+    width: 50vh;
+}
+
+.daysofcode p {
+    float: left;
+}
+
+
+
+
+
 
 
 /*projects*/
