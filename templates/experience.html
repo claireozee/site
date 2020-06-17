@@ -35,18 +35,22 @@
             <div class="tl-content daysofcode">
                 <h2>#100DaysOfCode</h2>
                 <img src="/static/images/twitter.jpeg" class="twitter-img"><br/>
-                <p><a href='https://www.codefirstgirls.org.uk/learners/'>CodeFirst: Girls</a>' web development courses was where I had my first introduction itnto the tech industry. 
+                <p><a href='https://www.codefirstgirls.org.uk/learners/' target="_blank">CodeFirst: Girls</a>' web development courses was where I had my first introduction itnto the tech industry.<br/>
+
                     100daysofcode
                 - cfg = intro into industry<br/>
                 - cfg annual conference - eyes opened<br/>
-                - started 100 days of code <br/>
-                - Personal goals: 1..., 2..., 3... .<br/>
+                - started 100 days of code <br/><br/>
+
+                Personal goals: 1..., 2..., 3... .<br/>
                     What I did to achieve the goals
                     went to tech events, networked within the community, build my skills
-                    html, css, python, js, daily coding challenges
+                    html, css, python, js, daily coding challenges<br/><br/>
 
-
-                Lessons learnt: 1..., 2..., 3... .
+                Lessons learnt:<br/>
+                1. Developing a skill require a lot of time to be invested in it<br/>
+                2. Breaks are necessary otherwise learning is counterproductive<br/>
+                3. Opportunities are out there - create them if you can't find them<br/>
                 
                 Highlight
                 </p>
@@ -98,15 +102,16 @@
     $(document).ready(function() {
         $('.tl-content').hide();  
         $('.daysofcode-name').click(function() {
-            $('.daysofcode').show(400);
-            $('.hackgirlsummer').hide(400);
+            $('.daysofcode').show().css({"width":'0'}).animate({"width":'100%'}, 400);
+            $(".hackgirlsummer").hide().show("slide", { direction: "left" }, 1500);
+            //$('.hackgirlsummer').css({"width":'100%'}).animate({"right":'0'}, 400).hide();
             $('.siliconvalley').hide(400);
             $('.timeline-content').css("height", "180vh");
             $('#experience-content').css("height", "200vh");
         });
         $('.hackgirlsummer-name').click(function() {
-            $('.daysofcode').hide(400);
-            $('.hackgirlsummer').show(400);
+            $('.daysofcode').css({"width":'100%'}).animate({"width":'0%'}, 400).hide();
+            $('.hackgirlsummer').show().css({"width":'0'}).animate({"width":'100%'}, 400);
             $('.siliconvalley').hide(400);
             $('.timeline-content').css("height", "200vh");
             $('#experience-content').css("height", "220vh");
@@ -120,6 +125,11 @@
             //difference of 20 as 'timeline' is 20vh - in order for it to stay in place when expereince is clicked
             //make each section as long as the content needs, but ensure a difference of 20
         });
+
+        //not to reopen when content is already showing
+
+
+
 
     });
     
