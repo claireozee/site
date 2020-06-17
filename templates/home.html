@@ -6,7 +6,7 @@
 </head>
 
 <body class="homebody">
-    <div class="navbar homenav">
+    <div class="navbar">
         <div class="navcontent">
             <h1 class="navname"><a href="/" class="backhome">Claire Ozee</a></h1>
             <div class="navlinks">
@@ -48,6 +48,7 @@
         </div>
         <p id="copyright"><small><small>© Ozee 2020</small></small></p>
     </div>
+    <div class="under-footer"></div>
 <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='js/site.js') }}"></script>
 <script src="https://kit.fontawesome.com/ace997583a.js"></script>
@@ -55,17 +56,17 @@
 <script>
     $(document).ready(function() {
         $('.backhome').css("visibility", "hidden");
-        $('.homenav').css("visibility", "hidden");
+        $('.navbar').css("visibility", "hidden");
         $('.footer').css("visibility", "hidden");
         $('.name').hide();
         $('.about').hide();
         
       //  $('.footercontent').hide();
        // $('#copyright').hide();
-
+        //to appear after a few seconds
         $('.name').delay(1000).fadeIn(300);
-        $('.footer').delay(1000).slideDown();
-        $('.footer').delay(2000).css("visibility", "visible");
+        //$('.footer').delay(1000).slideDown();
+        //$('.footer').delay(2000).css("visibility", "visible");
 
         $('.to-about').click(function() {
             $('.name').hide();
@@ -73,7 +74,8 @@
         });
         $('.to-site').click(function() {
             $('.about').hide();
-            $('.homenav').css("visibility", "visible");
+            $('.navbar').css("visibility", "visible").fadeIn(300);
+            $('.footer').delay(1000).fadeIn(300);
         });
     });
 </script>

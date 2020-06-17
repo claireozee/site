@@ -5,8 +5,8 @@ body {
 }
 
 /*home*/
-.homebody {
-    box-shadow: inset 0px -10px 10px -10px rgba(183, 183, 183);
+.homebody{
+    box-shadow: inset 0px -140px 100px -100px  rgba(183, 183, 183);
 }
 
 .landing {
@@ -121,9 +121,6 @@ p {
     position: relative; /*for box shadow to show*/
 }
 
-.homenav {  
-    box-shadow: none;
-}
 
 .navcontent {
     display: flex;
