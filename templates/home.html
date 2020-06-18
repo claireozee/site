@@ -54,18 +54,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script>
     $(document).ready(function() {
-        $('.backhome').css("visibility", "hidden");
-        $('.navbar').css("visibility", "hidden");
-        $('.footer').css("visibility", "hidden");
+        $('.backhome').css("display", "none");
+        $('.navbar').css("display", "none");    
+        $('.footer').css("display", "none");
         $('.name').hide();
         $('.about').hide();
         
-      //  $('.footercontent').hide();
-       // $('#copyright').hide();
         //to appear after a few seconds
         $('.name').delay(1000).fadeIn(300);
-        //$('.footer').delay(1000).slideDown();
-        //$('.footer').delay(2000).css("visibility", "visible");
 
         $('.to-about').click(function() {
             $('.name').hide();
@@ -73,8 +69,9 @@
         });
         $('.to-site').click(function() {
             $('.about').hide();
-            $('.navbar').css("visibility", "visible").fadeIn(300);
-            $('.footer').delay(1000).fadeIn(300);
+            $('.backhome').fadeIn(1000);
+            $('.navbar').fadeIn(1000);  //.slideDown(1000);
+            $('.footer').fadeIn(1000);  //.slideDown(1000);
         });
     });
 </script>

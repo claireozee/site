@@ -6,7 +6,11 @@ body {
 
 /*home*/
 .homebody{
-    box-shadow: inset 0px -140px 100px -100px  rgba(183, 183, 183);
+    box-shadow: inset 0px -140px 100px -100px  rgb(186, 186, 186);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .landing {
