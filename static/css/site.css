@@ -27,10 +27,6 @@ body {
     margin-top: 0;
 }
 
-.about {
-    border: 1px solid rgb(0, 255, 0);
-}
-
 .about-top-col {
     display: flex;
     flex-direction: row;
@@ -47,6 +43,8 @@ body {
 }
 
 #home-content button {
+    position: fixed;
+    bottom: 20vh;
     padding: 1vh;
     background-color: white;
     border: 2px solid rgba(183, 183, 183);
@@ -58,6 +56,10 @@ body {
     border: 2px solid blue;
 }
 
+#home-content button:active {
+    border: 2px solid red;
+    color: red;
+}
 
 .intern-img {
     height: 40vh;
@@ -124,7 +126,6 @@ p {
     padding: 1vh;
     position: relative; /*for box shadow to show*/
 }
-
 
 .navcontent {
     display: flex;

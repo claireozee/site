@@ -102,16 +102,15 @@
     $(document).ready(function() {
         $('.tl-content').hide();  
         $('.daysofcode-name').click(function() {
-            $('.daysofcode').show().css({"width":'0'}).animate({"width":'100%'}, 400);
-            $(".hackgirlsummer").hide().show("slide", { direction: "left" }, 1500);
-            //$('.hackgirlsummer').css({"width":'100%'}).animate({"right":'0'}, 400).hide();
+            $('.daysofcode').show(400);
+            $(".hackgirlsummer").hide(400);
             $('.siliconvalley').hide(400);
             $('.timeline-content').css("height", "180vh");
             $('#experience-content').css("height", "200vh");
         });
         $('.hackgirlsummer-name').click(function() {
-            $('.daysofcode').css({"width":'100%'}).animate({"width":'0%'}, 400).hide();
-            $('.hackgirlsummer').show().css({"width":'0'}).animate({"width":'100%'}, 400);
+            $('.daysofcode').hide(400);
+            $('.hackgirlsummer').show(400);
             $('.siliconvalley').hide(400);
             $('.timeline-content').css("height", "200vh");
             $('#experience-content').css("height", "220vh");
