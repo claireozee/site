@@ -58,7 +58,6 @@ body {
 
 #home-content button:active {
     border: 2px solid red;
-    color: red;
 }
 
 .intern-img {

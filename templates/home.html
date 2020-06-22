@@ -52,6 +52,24 @@
 <script type="text/javascript" src="{{ url_for('static', filename='js/site.js') }}"></script>
 <script src="https://kit.fontawesome.com/ace997583a.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="three.r95.min.js"></script>
+<script src="../static/js/vanta.waves.min.js"></script>
+<script>
+VANTA.WAVES({
+  el: ".homebody",
+  mouseControls: true,
+  touchControls: true,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x9b9b9b,
+  shininess: 0.00,
+  waveHeight: 10.50,
+  waveSpeed: 1.10,
+  zoom: 0.97
+})
+</script>
 <script>
     $(document).ready(function() {
         $('.backhome').css("display", "none");
