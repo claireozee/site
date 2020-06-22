@@ -18,7 +18,7 @@
     </div>
     <div class="content" id="experience-content">
         <div class="timeline">
-            <div class="container c3">
+            <div class="container c1">
                 <h3 class="daysofcode-name">#100DaysOfCode</h3>
                 <h6>Nov 2019</h6>
             </div>
@@ -26,9 +26,13 @@
                 <h3 class="hackgirlsummer-name">Hack Girl Summer</h3>
                 <h6>Jun 2020</h6>
             </div>
-            <div class="container c1" style="display: none">
+            <div class="container c3" style="display: none">
                 <h3 class="siliconvalley-name">Silicon Valley</h3>
                 <h6>Sep 2020</h6>
+            </div>
+            <div class="container c4" style="display: none">
+                <h3 class="EXPERIENCEFOUR-name">EXPERIENCE FOUR</h3>
+                <h6>DATE 2020</h6>
             </div>
         </div>
         <div class="timeline-content">
@@ -81,6 +85,12 @@
                 <p>san fran babyyy</p><br/>
                 <p>san fran babyyy</p><br/>
             </div>
+            <div class="tl-content EXPERIENCEFOUR">
+                <h2>EXPERIENCE FOUR</h2>
+                <p>experience four</p><br/>
+                <p>experience four</p><br/>
+                <p>experience four</p><br/>
+            </div>
         </div>
     </div>
     <div class="footer">
@@ -102,23 +112,23 @@
     $(document).ready(function() {
         $('.tl-content').hide();  
         $('.daysofcode-name').click(function() {
-            $('.daysofcode').show(400);
-            $(".hackgirlsummer").hide(400);
-            $('.siliconvalley').hide(400);
+            $('.daysofcode').fadeIn("fast");
+            $(".hackgirlsummer").fadeOut("fast");
+            $('.siliconvalley').fadeOut("fast");
             $('.timeline-content').css("height", "180vh");
             $('#experience-content').css("height", "200vh");
         });
         $('.hackgirlsummer-name').click(function() {
-            $('.daysofcode').hide(400);
-            $('.hackgirlsummer').show(400);
-            $('.siliconvalley').hide(400);
-            $('.timeline-content').css("height", "200vh");
-            $('#experience-content').css("height", "220vh");
+            $('.daysofcode').fadeOut("fast");
+            $('.hackgirlsummer').fadeIn("fast");
+            $('.siliconvalley').fadeOut("fast");
+            $('.timeline-content').css("height", "180vh");
+            $('#experience-content').css("height", "200vh");
         });
         $('.siliconvalley-name').click(function() {
-            $('.daysofcode').hide(400);
-            $('.hackgirlsummer').hide(400);
-            $('.siliconvalley').show(400);
+            $('.daysofcode').fadeOut("fast");
+            $('.hackgirlsummer').fadeOut("fast");
+            $('.siliconvalley').fadeIn("fast");
             $('.timeline-content').css("height", "180vh");
             $('#experience-content').css("height", "200vh");
             //difference of 20 as 'timeline' is 20vh - in order for it to stay in place when expereince is clicked
