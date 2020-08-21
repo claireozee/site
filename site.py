@@ -5,6 +5,7 @@ import requests
 app = Flask("PortfolioSite")
 
 @app.route("/")
+#@app.route("/", methods=['GET'])
 def home():
         return render_template("home.html")
 
@@ -30,4 +31,5 @@ def favicon():
                                #'favicon.ico', mimetype='image/vnd.microsoft.icon')
                                'favicon.ico', mimetype='image/png')
  
-app.run(port=5002)
+#app.run(port=5002)
+app.run(debug=True)
