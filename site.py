@@ -25,11 +25,11 @@ def projects():
 def blog():
         return render_template("blog.html")
 
-@app.route('/favicon.ico')
-def favicon():
-    return send_from_directory(os.path.join(app.root_path, 'static'),
+#@app.route('/favicon.ico')
+#def favicon():
+    #return send_from_directory(os.path.join(app.root_path, 'static'),
                                #'favicon.ico', mimetype='image/vnd.microsoft.icon')
-                               'favicon.ico', mimetype='image/png')
+                               #'favicon.ico', mimetype='image/png')
  
-#app.run(port=5002)
+#app.run(port=5002) setting port will cause Heroku H10 error - site crash
 app.run(debug=True)
