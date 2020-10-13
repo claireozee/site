@@ -4,7 +4,7 @@ import requests
 
 #app = Flask("PortfolioSite")
 #app = Flask("__name__")
-app = Flask("__name__")
+app = Flask(__name__)
 
 @app.route("/")
 #@app.route("/", methods=['GET'])
@@ -34,4 +34,5 @@ def favicon():
                                'favicon.ico', mimetype='image/png')
  
 #app.run(port=5002) setting port will cause Heroku H10 error - site crash
-app.run(debug=True)
+if __name__ == '__main__':
+        app.run(debug=True)
